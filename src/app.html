@@ -1,0 +1,78 @@
+<template>
+
+  <div if.bind="!userNameFound" class="login">
+    <h1>User session lost! Please log in again.</h1>
+    <form class="login-form" name="username">
+      <input type="text" class="username" name="name">
+      <button click.delegate="login()">Login</button>
+      <div if.bind="loginError" class="text-validation">${loginError}</div>
+    </form>
+  </div>
+
+  <div if.bind="userNameFound" class="dashboard">
+    <div class="dashboard-header">
+      <header>
+        <h1>Welcome back,
+          <span class="text-highlight">${username}</span>!</h1>
+      </header>
+    </div>
+    <div class="dashboard-sidebar">
+      <aside class="sidebar">
+        <div class="sidebar-search">
+          <input type="text" name="search" class="orgSearchName" placeholder="Search for Org...">
+          <button click.delegate="searchOrganisation()">Search</button>
+        </div>
+
+        <ul class="sidebar-list">
+          <li repeat.for="org of allOrganisations">${org}</li>
+        </ul>
+      </aside>
+    </div>
+    <div class="dashboard-content">
+      <section class="content-grid">
+        <div class="a">
+          <div class="b"></div>
+          <div class="c"></div>
+          <div class="d"></div>
+          <div class="e"></div>
+        </div>
+        <div class="b">
+          <div class="d"></div>
+          <div class="e"></div>
+          <div class="b"></div>
+          <div class="c"></div>
+        </div>
+        <div class="c">
+          <div class="one">
+            <p class="percentage">
+              <span class="text-highlight">${firstPercentage}</span>%
+            </p>
+            <p>Some text that goes here</p>
+          </div>
+          <div class="one">
+            <p class="percentage">
+              <span class="text-highlight">${secondPercentage}</span>%
+            </p>
+            <p>Some text that goes here</p>
+          </div>
+        </div>
+        <div class="e">e</div>
+        <div class="f">f</div>
+      </section>
+    </div>
+    <div class="dashboard-footer">
+      <footer>Footer crap</footer>
+    </div>
+  </div>
+
+</template>
+
+<!-- TODO:
+
+Move templates into smaller/modular views
+implement user session
+setup router correctly
+insert charts/canvas svgs
+extract data into interfaces and models
+
+-->

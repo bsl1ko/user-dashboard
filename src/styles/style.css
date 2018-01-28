@@ -1,0 +1,217 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.text-highlight {
+  color: #49aaff;
+}
+
+.text-validation {
+  color: red;
+}
+
+.dashboard {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 10% 85% 5%;
+  background-color: #fff;
+}
+
+.dashboard .dashboard-header {
+  grid-column: 1 / span 2;
+}
+
+.dashboard .dashboard-sidebar {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.dashboard .dashboard-content {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.dashboard .dashboard-footer {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+header {
+  height: 100%;
+  background-color: #D1FAFF;
+}
+
+header h1 {
+  padding: 2rem;
+}
+
+.sidebar {
+  background: #495867;
+  height: 100%;
+}
+
+.sidebar .sidebar-search {
+  padding: 1rem;
+}
+
+.sidebar .sidebar-search input[type="text"] {
+  padding: 1rem;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  position: relative;
+}
+
+.sidebar .sidebar-search input[type="text"]:hover, .sidebar .sidebar-search input[type="text"]:focus {
+  background-color: white;
+}
+
+.sidebar .sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar .sidebar-list > li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.sidebar .sidebar-list > li:hover {
+  background: #AEC5EB;
+}
+
+.content-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.content-grid > * {
+  background: #ececec;
+}
+
+.content-grid .a {
+  grid-column: 1;
+}
+
+.content-grid .a, .content-grid .b {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.content-grid .a > *, .content-grid .b > * {
+  width: 25%;
+}
+
+.content-grid .a .b, .content-grid .b .b {
+  height: 30%;
+  background-color: #57A773;
+}
+
+.content-grid .a .c, .content-grid .b .c {
+  height: 50%;
+  background-color: #49aaff;
+}
+
+.content-grid .a .d, .content-grid .b .d {
+  height: 40%;
+  background-color: #57A773;
+}
+
+.content-grid .a .e, .content-grid .b .e {
+  height: 80%;
+  background-color: #49aaff;
+}
+
+.content-grid .b {
+  grid-column: 2;
+}
+
+.content-grid .b .e {
+  background-color: #49aaff;
+}
+
+.content-grid .b .d {
+  background-color: #57A773;
+}
+
+.content-grid .b .c {
+  background-color: #49aaff;
+}
+
+.content-grid .b .b {
+  background-color: #57A773;
+}
+
+.content-grid .c {
+  grid-column: 3 / span 4;
+  display: flex;
+}
+
+.content-grid .c .one {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #D1FAFF;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.login h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.login .login-form {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login .login-form input[type="text"] {
+  padding: 1rem;
+  border: 0;
+  background-color: #d2d2d2;
+}
+
+.login .login-form button {
+  padding: 1rem;
+  border: 0;
+  background-color: #49aaff;
+}
+
+.percentage {
+  font-size: 4rem;
+}
+/*# sourceMappingURL=style.css.map */
