@@ -14,6 +14,9 @@ export class App {
   private firstPercentage: number = 57;
   private secondPercentage: number = 68;
   private loginError: string = '';
+  private firstSummaryStatText: string = 'This is a summary of some data.';
+  private secondSummaryStatText: string = 'This is a summary of some data two.';
+  private organisationDataSetOne: Array<number> = [35, 87, 56, 61];
 
   private allOrganisations: Array<string> = [
     'Organisation Name 1',
@@ -27,6 +30,10 @@ export class App {
   constructor(private organisation: Organisation) {
 
   }
+
+  // public attached(): void {
+
+  // }
 
   public searchOrganisation(): void {
     let input, filter, ul, li, i;

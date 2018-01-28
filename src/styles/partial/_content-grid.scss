@@ -7,58 +7,9 @@
   & > * {
     background: #ececec;
   }
-  .a {
-    grid-column: 1;
-  }
-  .a, .b {
-    display: flex;
-    align-items: flex-end;
-    padding: 1rem;
 
-    & > * {
-      width: 25%;
-    }
-    .b {
-      height: 30%;
-      background-color: $color-green;
-    }
-    .c {
-      height: 50%;
-      background-color: $color-blue;
-    }
-    .d {
-      height: 40%;
-      background-color: $color-green;
-    }
-    .e {
-      height: 80%;
-      background-color: $color-blue;
-    }
-  }
-  .b {
-    grid-column: 2; 
-    .e {
-      background-color: $color-blue;
-    }
-    .d {
-      background-color: $color-green;
-    }
-    .c {
-      background-color: $color-blue;
-    }
-    .b {
-      background-color: $color-green;
-    }
-  }
   .c {
     grid-column: 3 / span 4;
     display: flex;
-    
-    .one {
-      display: flex;
-      flex: 1;
-      justify-content: center;
-      align-items: center;
-    }
   }
 }

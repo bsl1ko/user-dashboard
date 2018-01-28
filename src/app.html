@@ -1,4 +1,6 @@
 <template>
+  <require from="resources/elements/bar-graph"></require>
+  <require from="resources/elements/summary-stat"></require>
 
   <div if.bind="!userNameFound" class="login">
     <h1>User session lost! Please log in again.</h1>
@@ -30,31 +32,16 @@
     </div>
     <div class="dashboard-content">
       <section class="content-grid">
-        <div class="a">
-          <div class="b"></div>
-          <div class="c"></div>
-          <div class="d"></div>
-          <div class="e"></div>
-        </div>
-        <div class="b">
-          <div class="d"></div>
-          <div class="e"></div>
-          <div class="b"></div>
-          <div class="c"></div>
+        <bar-graph graph-data.bind="organisationDataSetOne"></bar-graph>
+        <div class="bar-graph">
+          <div class="bar d"></div>
+          <div class="bar e"></div>
+          <div class="bar b"></div>
+          <div class="bar c"></div>
         </div>
         <div class="c">
-          <div class="one">
-            <p class="percentage">
-              <span class="text-highlight">${firstPercentage}</span>%
-            </p>
-            <p>Some text that goes here</p>
-          </div>
-          <div class="one">
-            <p class="percentage">
-              <span class="text-highlight">${secondPercentage}</span>%
-            </p>
-            <p>Some text that goes here</p>
-          </div>
+          <summary-stat containerless percentage="57" text.bind="firstSummaryStatText"></summary-stat>
+          <summary-stat containerless percentage="68" text.bind="secondSummaryStatText"></summary-stat>
         </div>
         <div class="e">e</div>
         <div class="f">f</div>

@@ -1,0 +1,26 @@
+.bar-graph {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+
+  .bar {
+    width: 25%;
+  }
+
+  .b {
+    height: 30%;
+    background-color: $color-green;
+  }
+  .c {
+    height: 50%;
+    background-color: $color-blue;
+  }
+  .d {
+    height: 40%;
+    background-color: $color-green;
+  }
+  .e {
+    height: 80%;
+    background-color: $color-blue;
+  }
+}
